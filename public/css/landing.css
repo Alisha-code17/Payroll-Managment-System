@@ -1,0 +1,103 @@
+/* Centering the container */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#6EB2E9;
+   
+    font-family: Arial, sans-serif;
+    background-size: cover;
+     opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+/* This will be added to show the body when ready */
+body.loaded {
+    opacity: 1;
+    transform: translateY(0);
+            }
+
+/* Container styling with background image */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: url('/images/cont.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.content-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .content-item.show {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+
+/* Left section styling */
+.left-content {
+    max-width: 50%;
+}
+
+.left-content h1 {
+    font-style: italic;
+    font-size: 40px;
+    color: #4F9DDB; /* Darker blue for contrast */
+    margin-bottom: 20px;
+}
+
+.left-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #458AC2; /* Light gray for readability */
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.button {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4F9DDB; /* Deeper blue for the button */
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1e40af; /* Darker shade for hover effect */
+}
+
+/* Right section styling */
+.right-content img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-content, .right-content {
+        max-width: 100%;
+    }
+    .right-content img {
+        margin-top: 20px;
+    }
+}

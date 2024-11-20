@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    height:15vh;
+    border: 1px solid #6EB2E9;
+
+}
+.sidebar{
+    width: 13%;
+    height: 100vh;
+    border: 0px solid black;
+    padding-top: 20px;
+    background-color:#6EB2E9;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+.icon {
+    width: 30px; /* Set icon width */
+    height: 30px; /* Set icon height */
+    margin-right: 10px; /* Add space around the icon */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.itemsname{
+   box-sizing: border-box;
+    align-items: center;
+    margin-left: 46px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    color: #FFFF;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+}
+.sub-items {
+    display: block; /* Ensures each link is on a new line */
+    margin-top: 10px;
+    margin-bottom: 20px; /* Adds space below each item */
+    margin-left: 24px;
+    text-decoration: none; /* Removes underline for links */
+    color: #ffffff; /* Optional: Sets text color */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: .4s;
+    
+    
+}
+.sidebar .itemsname {
+   padding: 1rm;
+    display: block;
+    border-radius: 8px;
+    
+    
+    
+}
+
+
+
+.sub-items a{
+    background-color: #082944;
+}
+.dropdown-menu {
+    display: none;
+    padding-left: 20px;
+}
+.c-name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 46px;
+    align-items: center;
+    justify-content: center;
+    color: #6EB2E9;
+    font-size: 25px;
+    font-weight: bold;
+}
+.admin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 46px;
+    align-items: center;
+    justify-content: center;
+    color: #6EB2E9;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+   
